@@ -1,0 +1,20 @@
+*.jar
+*.log
+*.zip
+config.conf
+server.properties
+version.txt
+
+bedrock/server/*
+!bedrock/server/worlds/
+bedrock/server/worlds/Bedrock level/*
+!bedrock/server/worlds/Bedrock level/behavior_packs/
+!bedrock/server/worlds/Bedrock level/world_behavior_packs.json
+
+java/server/*
+!java/server/world/
+!java/server/eula.txt
+!java/server/ops.json
+!java/server/server-icon.png
+java/server/world/*
+!java/server/world/datapacks/

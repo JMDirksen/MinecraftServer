@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Show a message when a player joins",
+        "name": "On Join",
+        "uuid": "ef3ccba4-609e-45b0-bcab-f790e3eafc45",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 16, 0]
+    },
+    "modules": [
+        {
+            "description": "On Join",
+            "type": "data",
+            "uuid": "2a1c7502-427a-43df-9e0c-e4bd58ed77dc",
+            "version": [1, 0, 0]
+        }
+    ]
+}

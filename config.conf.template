@@ -1,0 +1,8 @@
+# Minecraft Java
+MEMORY=4G
+
+# Backup
+BACKUP_FILE=~/minecraftserver_backup.zip
+BACKUP_TARGET_HOSTNAME=hostname
+BACKUP_TARGET_USERNAME=username
+BACKUP_TARGET_PATH=path/on/backup/target

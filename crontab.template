@@ -1,0 +1,16 @@
+SHELL=/bin/bash
+
+# Startup
+@reboot (echo $(date) Start java; ~/minecraftserver/java/start.sh) >> ~/cron.log 2>&1
+@reboot (echo $(date) Start bedrock; ~/minecraftserver/bedrock/start.sh) >> ~/cron.log 2>&1
+
+# Restart
+0 0 * * * (echo $(date) Restart java; ~/minecraftserver/java/restart.sh) >> ~/cron.log 2>&1
+5 0 * * * (echo $(date) Restart bedrock; ~/minecraftserver/bedrock/restart.sh) >> ~/cron.log 2>&1
+
+# Update
+15 6 * * * (echo $(date) Update java; ~/minecraftserver/java/update.sh) >> ~/cron.log 2>&1
+20 6 * * * (echo $(date) Update bedrock; ~/minecraftserver/bedrock/update.sh) >> ~/cron.log 2>&1
+
+# Backup
+0 5 * * * (echo $(date) Starting backup; ~/minecraftserver/backup.sh) >> ~/cron.log 2>&1
